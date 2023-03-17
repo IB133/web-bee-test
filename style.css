@@ -1,0 +1,166 @@
+.header{
+    border: solid 1px rgb(154, 154, 154);
+}
+.header-text{
+    margin-left: 10px;
+}
+.news{
+    width: 1080px;
+    height: 657px;
+    background-color: white;
+    position: relative;
+    margin:50px;
+}
+.img{
+    position: relative;
+    margin: 0 auto;
+    top: 5%;
+    left: 0;
+    width: 800px;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+}
+.img div{
+    position: absolute;
+    margin: 0 auto;
+    top: 5%;
+    left: 0;
+    max-width: 800px;
+    bottom: 0;
+    right: 0;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 672px;
+    position: relative;
+    margin:50px;
+}
+
+.summary{
+    display: flex;
+}
+.about-item{
+    position: relative;
+    background-color: white;
+    margin-bottom: 15px;
+    height: 50%;
+}
+.avatar{
+    width:132px;
+    height:132px;
+    border-radius: 66px;
+    margin:0 auto;
+    margin-top: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #505050;
+    text-align: center;
+    margin-top: 5px;
+}
+#skils{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8F8F8F; 
+    text-align: center;
+}
+.profNav{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #505050;
+}
+.navItem{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #505050;
+}
+.balance{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: right;
+color: #8F8F8F;
+}
+.notice{
+    width: 24px;
+    height: 16px;
+    border-radius: 8px;
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+font-feature-settings: 'tnum' on, 'lnum' on;
+color: #FFFFFF;
+}
+a {
+  text-decoration: none!important;
+  color: #000000!important;
+}
+.text{
+    position: relative;
+    margin: 0 auto;
+    margin-top:75px ;
+    width: 800px;
+    min-height: 100px;
+}
+.text p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #505050;
+}
+.menuItem:hover{
+    transition:background-color 0.8s;
+	background-color: rgb(194, 194, 194);
+	cursor: pointer;
+	border-radius: 2px;
+}
+.menu-sel{
+    background-color: rgb(194, 194, 194);
+    transition:background-color 0.6s;
+}
+.Wrap{
+    width: 1376px;
+    background-color: white;
+    margin:50px;
+    height: 568px;
+}
+.mapHead{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: #505050;
+}
+.map{
+    margin:50px;
+    height: 500px;
+}
