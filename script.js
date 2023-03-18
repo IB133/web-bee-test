@@ -1,19 +1,16 @@
 let currentMenuItem
-function menuSelected(num_li)
+function menuSelected(item)
 {
     let selected
     if (currentMenuItem == null){
-        selected = document.getElementById(num_li);
-        selected.classList.add('menu-sel');
-        currentMenuItem = num_li
+        item.classList.add('menu-sel');
+        currentMenuItem = item
         return
     }
-    let prev = document.getElementById(currentMenuItem);
+    let prev = currentMenuItem;
     prev.classList.remove('menu-sel')
-    selected = document.getElementById(num_li);
+    selected = item
     selected.classList.add('menu-sel');
-    currentMenuItem = num_li
+    currentMenuItem = item
     
 }
-
-menuSelected('li1')
