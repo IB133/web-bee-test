@@ -8,7 +8,6 @@
     width: 1080px;
     height: 657px;
     background-color: white;
-    position: relative;
     margin:50px;
 }
 .img{
@@ -39,7 +38,6 @@
     flex-direction: column;
     width: 264px;
     height: 672px;
-    position: relative;
     margin:50px;
 }
 
@@ -47,7 +45,6 @@
     display: flex;
 }
 .about-item{
-    position: relative;
     background-color: white;
     margin-bottom: 15px;
     height: 50%;
@@ -62,46 +59,41 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-#name{
+.name{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #505050;
     text-align: center;
     margin-top: 5px;
 }
-#skils{
+.skils{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: normal;
     color: #8F8F8F; 
     text-align: center;
 }
 .profNav{
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
-line-height: 20px;
+line-height: normal;
 color: #505050;
 }
 .navItem{
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 16px;
+line-height: normal;
 color: #505050;
 }
 .balance{
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 400;
 font-size: 12px;
-line-height: 14px;
+line-height: normal;
 text-align: right;
 color: #8F8F8F;
 }
@@ -109,20 +101,18 @@ color: #8F8F8F;
     width: 24px;
     height: 16px;
     border-radius: 8px;
-    font-style: normal;
 font-weight: 400;
 font-size: 12px;
-line-height: 16px;
+line-height: normal;
 text-align: center;
 font-feature-settings: 'tnum' on, 'lnum' on;
 color: #FFFFFF;
 }
-a {
-  text-decoration: none!important;
-  color: #000000!important;
+.navMenu {
+  text-decoration: none;
+  color: #000000;
 }
 .text{
-    position: relative;
     margin: 0 auto;
     margin-top:75px ;
     width: 800px;
@@ -130,10 +120,9 @@ a {
 }
 .text p{
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: normal;
     color: #505050;
 }
 .menuItem:hover{
@@ -154,10 +143,9 @@ a {
 }
 .mapHead{
 font-family: 'Roboto';
-font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 19px;
+line-height: normal;
 color: #505050;
 }
 .map{
