@@ -1,4 +1,3 @@
-
 function init() {
     let geolocation = ymaps.geolocation,
         myMap = new ymaps.Map('map', {

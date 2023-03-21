@@ -1,34 +1,18 @@
-let sec = 0
-let min = 0
-let hrs = 0
-let time
+let sec = 0;
+let intervalId;
 
-function tick(){
-    sec++
-    if (sec >= 60) {
-        sec = 0
-        min++
-        if (min >= 60) {
-            min = 0
-            hrs++
-        }
-    }
+function startTimer(){
+    setInterval(() => {
+        sec++;
+    }, 1000);
 }
 
-function add() {
-    tick()
-    time = (hrs > 9 ? hrs : "0" + hrs) 
-        	 + ":" + (min > 9 ? min : "0" + min)
-       		 + ":" + (sec > 9 ? sec : "0" + sec)
-    timer()
+function writeTimer(){
+    let pTimer = document.getElementById('timer');
+    let h = `${Math.floor(Math.floor(sec/3600)/10)}${Math.floor(sec/3600)%10}`;
+    let m = `${Math.floor(Math.floor(sec/60)%60/10)}${Math.floor(sec/60)%60%10}`;
+    let s = `${Math.floor(sec%60/10)}${(sec%60%10)}`;
+    pTimer.innerText = `${h}:${m}:${s}`;
 }
 
-function timer() {
-    setTimeout(add, 1000)
-}
-
-function printTimer(){
-    document.getElementById('timer').textContent = time
-}
-
-timer()
+startTimer();

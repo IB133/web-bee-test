@@ -1,40 +1,40 @@
-let  menu = document.querySelectorAll('.menuItem')
+let  menu = document.querySelectorAll('.menuItem');
 menu.forEach(item => {
     item.addEventListener('click', e => {
-        e.preventDefault()
-        path(e)
-    })
-})
+        e.preventDefault();
+        path(e);
+    });
+});
 
-const paths = {}
-paths['']='main.html'
-paths['#map']='map.html'
-paths['#timer']='timer.html'
+const paths = {
+    '':'main.html',
+    '#map':'map.html',
+    '#timer':'timer.html'
+}
 
 const path = (e) => {
-    window.history.pushState({}, '', e.target.href)
-    checkLocation()
+    window.history.pushState({}, '', e.target.href);
+    checkLocation();
 }
-
-let intervalId
 
 const checkLocation = async () => {
-    let loc =window.location.hash
-    const html = await fetch(paths[loc]).then((data) => data.text())
-    main.innerHTML = html
-    if (paths[loc] === 'map.html') {
-        menuSelected(menu[1])
+    const html = await fetch(paths[window.location.hash]).then((data) => data.text());
+    main.innerHTML = html;
+    if (paths[window.location.hash] === 'map.html') {
+        menuSelected(menu[1]);
         ymaps.ready(init);
+        clearInterval(intervalId);
     }
-    else if (paths[loc] === 'timer.html') {
-        menuSelected(menu[2])
-        intervalId = setInterval(printTimer, 1000)
+    else if (paths[window.location.hash] === 'timer.html') {
+        menuSelected(menu[2]);
+        intervalId = setInterval(writeTimer,1000);
+        writeTimer()
     }
     else {
-        menuSelected(menu[0])
-        clearInterval(intervalId)
+        menuSelected(menu[0]);
+        clearInterval(intervalId);
     }
 }
-window.onpopstate = checkLocation
-window.route = path
-checkLocation()
+window.onpopstate = checkLocation;
+window.route = path;
+checkLocation();
