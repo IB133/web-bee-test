@@ -1,20 +1,12 @@
 let  menu = document.querySelectorAll('.menuItem');
-menu.forEach(item => {
-    item.addEventListener('click', e => {
-        e.preventDefault();
-        path(e);
-    });
-});
+window.addEventListener('locationchange',() => {
+    checkLocation();
+})
 
 const paths = {
     '':'main.html',
     '#map':'map.html',
     '#timer':'timer.html'
-}
-
-const path = (e) => {
-    window.history.pushState({}, '', e.target.href);
-    checkLocation();
 }
 
 const checkLocation = async () => {
@@ -36,5 +28,4 @@ const checkLocation = async () => {
     }
 }
 window.onpopstate = checkLocation;
-window.route = path;
 checkLocation();
