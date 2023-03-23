@@ -23,6 +23,6 @@ function init() {
         result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
         myMap.geoObjects.add(result.geoObjects);
     });
-    preloader = document.getElementById('preloader')
-    preloader.style.display="none"
+    preloader = document.getElementById('preloader');
+    preloader.style.display="none";
 }

@@ -4,20 +4,20 @@ window.addEventListener('locationchange',() => {
 })
 
 const paths = {
-    '':'main.html',
-    '#map':'map.html',
-    '#timer':'timer.html'
+    '':'pages/main.html',
+    '#map':'pages/map.html',
+    '#timer':'pages/timer.html'
 }
 
 const checkLocation = async () => {
     const html = await fetch(paths[window.location.hash]).then((data) => data.text());
     main.innerHTML = html;
-    if (paths[window.location.hash] === 'map.html') {
+    if (paths[window.location.hash] === 'pages/map.html') {
         menuSelected(menu[1]);
         ymaps.ready(init);
         clearInterval(intervalId);
     }
-    else if (paths[window.location.hash] === 'timer.html') {
+    else if (paths[window.location.hash] === 'pages/timer.html') {
         menuSelected(menu[2]);
         intervalId = setInterval(writeTimer,1000);
         writeTimer()
