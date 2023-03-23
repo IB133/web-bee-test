@@ -13,14 +13,10 @@ body{
 }
 .avatar{
     width:132px;
-    background-image: url(images/avatar.jpg);
     height:132px;
     border-radius: 66px;
     margin:0 auto;
     margin-top: 25px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .balance{
 font-family: 'Roboto';
