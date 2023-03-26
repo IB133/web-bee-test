@@ -1,4 +1,4 @@
-let  menu = document.querySelectorAll('.menuItem');
+let  menu = document.querySelectorAll('.menu-item');
 window.addEventListener('locationchange',() => {
     checkLocation();
 })
