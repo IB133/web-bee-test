@@ -1,0 +1,103 @@
+.main-wrapper{
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+.about-item-up{
+    background-color: white;
+    margin-bottom: 15px;
+    height: 296px;
+}
+.about-item-down{
+    background-color: white;
+    margin-bottom: 15px;
+    height: 312px;
+}
+.avatar{
+    width:132px;
+    height:132px;
+    border-radius: 66px;
+    margin-top: 25px;
+    object-fit: cover;
+}
+.amount-on-balance{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+    text-align: right;
+    color: #8F8F8F;
+}
+.notice{
+    width: 24px;
+    height: 16px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+}
+.nav-menu {
+  text-decoration: none;
+  color: #000000;
+}
+.side-border{
+    border-left: solid 2px #D3D8DE;
+}
+.menu-item:hover{
+    transition:background-color 0.8s;
+	background-color: #c2c2c2;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.commentTime{
+   color: #8f8f8f;
+}
+.menu-selected{
+    background-color: #c2c2c2;
+    transition:background-color 0.6s;
+}
+.map{
+    height: 480px;
+}
+.subtitle{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    color: #505050;
+}
+.title{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    color:#505050;
+}
+.text{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    color:#505050;
+}
+.message-form{
+    height: 190px;
+    background-color: white;
+}
+.message-area{
+    height: 88px;
+}
+.save-button{
+    height: 32px;
+    width: 85%;
+}
+.collapsed-news{
+    height: 56px;
+    background-color: white;
+}
+.link:active,.link:hover,.link{
+    text-decoration: none;
+    color:#505050;
+}
