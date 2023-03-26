@@ -7,8 +7,7 @@ function menuSelected(item)
         currentMenuItem = item;
         return
     }
-    let prev = currentMenuItem;
-    prev.classList.remove('menu-selected');
+    currentMenuItem.classList.remove('menu-selected');
     selected = item;
     selected.classList.add('menu-selected');
     currentMenuItem = item;

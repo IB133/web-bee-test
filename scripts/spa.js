@@ -12,19 +12,19 @@ const paths = {
 const checkLocation = async () => {
     const html = await fetch(paths[window.location.hash]).then((data) => data.text());
     main.innerHTML = html;
-    if (paths[window.location.hash] === 'pages/map.html') {
+    if (paths[window.location.hash] === paths['#map']) {
         menuSelected(menu[1]);
         ymaps.ready(init);
-        clearInterval(intervalId);
+        clearInterval(startPrint);
     }
-    else if (paths[window.location.hash] === 'pages/timer.html') {
+    else if (paths[window.location.hash] === paths['#timer']) {
         menuSelected(menu[2]);
-        intervalId = setInterval(writeTimer,1000);
+        startPrint = setInterval(writeTimer,1000);
         writeTimer()
     }
-    else {
+    else if (paths[window.location.hash] === paths['']) {
         menuSelected(menu[0]);
-        clearInterval(intervalId);
+        clearInterval(startPrint);
     }
 }
 window.onpopstate = checkLocation;
